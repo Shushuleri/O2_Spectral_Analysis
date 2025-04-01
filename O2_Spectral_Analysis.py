@@ -9,10 +9,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from specparam import SpectralGroupModel
 from scipy.stats import ttest_rel
+import os
 
 #File_paths
-file_ec = r"C:\Users\User\Desktop\Synology\EEG_student_5G\Blessing\data_proc\Blessing_sample_cleaned\GOLIAT_NF1X_001_S1_b04_EC.vhdr"
-file_eo = r"C:\Users\User\Desktop\Synology\EEG_student_5G\Blessing\data_proc\Blessing_sample_cleaned\GOLIAT_NF1X_001_S1_b04_EO.vhdr"
+file_ec = os.path.join(os.environ['SYNOLOGY_ROOT'],r"EEG_student_5G\Blessing\data_proc\Blessing_sample_cleaned\GOLIAT_NF1X_001_S1_b04_EC.vhdr")
+file_eo = os.path.join(os.environ['SYNOLOGY_ROOT'],r"EEG_student_5G\Blessing\data_proc\Blessing_sample_cleaned\GOLIAT_NF1X_001_S1_b04_EO.vhdr")
 
 #Load_EEG_Data
 raw_ec = mne.io.read_raw_brainvision(file_ec, preload=True)

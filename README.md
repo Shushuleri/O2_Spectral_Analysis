@@ -30,3 +30,8 @@ uv add mne
 I already added this, so this is just an example. But it adds it to the lockfile (uv.lock), and if you commit your lockfile and I pull it to my local repo, I just have to uv sync to get the packages that you've installed.
 
 It didn't take too much time to figure this out, so I hope this will work good for you as well
+
+## Environment variable
+
+I have an environment variable that points to my Synology folder. The variable is called SYNOLOGY_ROOT. You can see that I edited the code so that it works on my computer, and after defining the environment variable it should work on yours too. Your SYNOLOGY_ROOT would be C:\Users\User\Desktop\Synology based on your first commit.
+
