@@ -1,0 +1,11 @@
+[project]
+name = "o2-spectral-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mne>=1.9.0",
+    "pip>=25.0.1",
+    "specparam>=2.0.0rc3",
+]
